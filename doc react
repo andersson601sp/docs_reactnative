@@ -1,0 +1,35 @@
+npx create-react-app my-app
+cd my-app
+npm start
+
+instalar bibliotecas react-bootstrap e bootstrap
+npm install react-bootstrap bootstrap --save
+
+instalar fontawesome
+npm install --save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
+
+instalar axios
+npm install --save axios
+
+instalar biblioteca de roteamento
+npm install --save hookrouter
+
+instalar a checagem de tipo definidos
+npm install prop-types --save
+
+instalar teste
+npm install @testing-library/react @testing-library/jest-dom --save-dev
+
+pesquisar mais sobre react-bootstrap e testing-library
+
+Configurar Ambiente do Projeto:
+ -> Renomer arquivos app para o nome do projeto
+ -> Limpar arquivos CSS
+ -> Importar no index.js o bootstrap: import 'bootstrap/dist/css/bootstrap.min.css';
+ -> Arquivo test js deixar:
+    it('rdeve redenrizar o projeto sem erro', () => {
+    const div = document.createElement('div');
+    ReactDOM.render(<MyProjeto />,'div'); // Importação do js principal
+    ReactDOM.unmountComponentAtNode(div);
+    
+
