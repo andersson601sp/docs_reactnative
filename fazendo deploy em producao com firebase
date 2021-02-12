@@ -1,0 +1,40 @@
+fazendo deploy em producao
+
+preparando projeto
+npm run build
+
+recuperar o diretorio build e implantar no seu servidor
+
+
+deploy em firebase:
+1 - adicionar um projeto
+  - nome projeto -> criar projeto
+
+voltando para o terminal
+sudo npm install firebase -tools -g 
+
+firebase login
+- Yes
+- digitar permissao de acesso
+
+configuracao do firebase
+  firebase init
+  selecione a opçao Hosting sites
+  pressione espaço - enter
+  selecione a opcao existente - enter
+  selecionar projeto - enter
+
+  apontar o diretorio do build
+  build
+  se for single-page app? yes
+  nao sobrescrever index.html? No
+
+  sera criado dois aquivo:
+  firebase.json
+ .firebaserc
+
+finalizando deploy:
+   firebase deploy
+   sera gerado a url para uso
+
+
